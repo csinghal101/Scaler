@@ -35,6 +35,7 @@ public class RangeSumQuery {
         int e = 0;
         //psList.add(A.get(0));
         ArrayList<Long> sum = new ArrayList<>();
+        // T.C = O(N) and S.C = O(N)
         for(int i = 0; i< A.size(); i++){
             if(i == 0){
                 psList.add(Long.valueOf(A.get(i)));
@@ -44,6 +45,7 @@ public class RangeSumQuery {
         }
         System.out.println(psList);
 
+        //T.C O(QM) and S.C (M)
         for(int j = 0; j<B.size(); j++){
                 s = B.get(j).get(0)-1;
                 e = B.get(j).get(1)-1;
@@ -56,6 +58,8 @@ public class RangeSumQuery {
 
         }
         return sum;
+
+        // total T.C O(N) + O(QM) = O(N+M) and S.C = O(N)
     }
 
 

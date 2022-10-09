@@ -53,6 +53,7 @@ public class RangeSumQuery {
                 if(s==0){
                     sum.add(psList.get(e));
                 }else{
+                    // to find sum from range s-e we have to find sum from s-1 to e
                     sum.add(psList.get(e) - psList.get(s-1));
                 }
 

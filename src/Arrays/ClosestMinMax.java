@@ -22,6 +22,7 @@ public class ClosestMinMax {
                 max = A.get(i);
             }
         }
+            // one can also use Collections.sort() function and pick min and max at index 0 and size-1
 
         for(int j = 0; j<A.size(); j++){
             if(A.get(j)== min ){
@@ -42,6 +43,7 @@ public class ClosestMinMax {
         }
 
         return ans;
-
+        // T.C will be O(N +N )-> O(N)
+        // S.C will be O(1)
     }
 }
